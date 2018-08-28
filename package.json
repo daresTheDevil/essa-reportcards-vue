@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js",
+    "build": "node build/build.js; push-dir --dir=dist --branch=gh-pages --cleanup",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-free": "^5.2.0",
     "@mdi/font": "^2.5.94",
     "highcharts": "^6.1.1",
+    "push-dir": "^0.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
