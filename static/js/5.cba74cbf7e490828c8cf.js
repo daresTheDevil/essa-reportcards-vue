@@ -1,0 +1,2 @@
+webpackJsonp([5],{71:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(89),a=t(13),l=a(null,r.a,!1,null,null,null);n.default=l.exports},89:function(e,n,t){"use strict";var r=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("v-app",[t("v-container",[t("h1",[e._v("This card tho")])])],1)},a=[],l={render:r,staticRenderFns:a};n.a=l}});
+//# sourceMappingURL=5.cba74cbf7e490828c8cf.js.map
