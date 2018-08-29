@@ -23,7 +23,7 @@
       <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12>
-            <h1 class="display-2 font-weight-bold">{{ entity.EntityDisplayName }} {{ $route.params.id }}</h1>
+            <h1 class="display-2 font-weight-bold">{{ entity.EntityDisplayName }}</h1>
           </v-flex>
           <v-flex d-flex xs12 sm4>
             <v-card color="purple" dark>
@@ -34,12 +34,12 @@
             <v-layout row wrap>
               <v-flex xs12>
                 <v-card color="red lighten-2" dark>
-                  <v-card-text>Superintendent</v-card-text>
+                  <v-card-text>Superintendent {{ entity.EntityContactName }}</v-card-text>
                   </v-card>
               </v-flex>
               <v-flex xs12>
                 <v-card color="red lighten-2" dark>
-                  <v-card-text>Address</v-card-text>
+                  <v-card-text>{{ entity.EntityAddress }}, {{ entity.EntityCity }}</v-card-text>
                   </v-card>
               </v-flex>
               <v-flex xs12>
@@ -87,6 +87,21 @@
         </v-layout>
       </v-container>
     </section>
+
+    <section class="deep-orange lighten-4 my-0">
+      <v-container class="my-0 py-0">
+          <v-breadcrumbs large mb-0>
+          <v-breadcrumbs-item>State</v-breadcrumbs-item>
+          <v-breadcrumbs-item
+            v-if="entity.EntityType == 'District'">{{ entity.EntityDisplayName }}</v-breadcrumbs-item>
+          <v-breadcrumbs-item
+            v-else-if="entity.EntityType == 'School'">{{ entity.ParentEntityName }}</v-breadcrumbs-item>
+          <v-breadcrumbs-item
+            v-if="entity.EntityType == 'School'"
+            >{{ entity.EntityDisplayName }}</v-breadcrumbs-item>
+        </v-breadcrumbs>
+      </v-container>
+        </section>
 
     <section class="light-blue lighten-4">
       <v-container>
@@ -231,7 +246,8 @@
 </template>
 
 <script>
-  import json from '../data/entity.json'
+  // import json from '../data/entity.json'
+  import json from '../data/essa-test.json'
 
   export default {
     data () {
@@ -242,7 +258,7 @@
       }
     },
     mounted () {
-      this.entity = json.find(item => item.EntityID === this.$route.params.id)
+      this.entity = json.find(item => item.EntityId === this.$route.params.id)
     }
   }
 </script>

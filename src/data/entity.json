@@ -8,6 +8,7 @@
   },
   {
     "EntityID": "0130-000",
+    "ParentEntityID": "0000-000",
     "EntityDisplayName": "Natchez-Adams School District",
     "EntityType": "District",
     "EntityGrade": "D",
@@ -15,6 +16,7 @@
   },
   {
     "EntityID": "0130-020",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Mc Laurin Elementary School",
     "EntityType": "School",
     "EntityGrade": "B",
@@ -22,6 +24,7 @@
   },
   {
     "EntityID": "0130-027",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Morgantown College Prep Academy",
     "EntityType": "School",
     "EntityGrade": "F",
@@ -29,6 +32,7 @@
   },
   {
     "EntityID": "0130-028",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Morgantown Middle",
     "EntityType": "School",
     "EntityGrade": "F",
@@ -36,6 +40,7 @@
   },
   {
     "EntityID": "0130-036",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Robert Lewis Magnet School",
     "EntityType": "School",
     "EntityGrade": "D",
@@ -43,6 +48,7 @@
   },
   {
     "EntityID": "0130-040",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Joseph L Frazier Elementary",
     "EntityType": "School",
     "EntityGrade": "D",
@@ -50,6 +56,7 @@
   },
   {
     "EntityID": "0130-043",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Natchez Early College Academy",
     "EntityType": "School",
     "EntityGrade": "B",
@@ -57,6 +64,7 @@
   },
   {
     "EntityID": "0130-044",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Natchez High School",
     "EntityType": "School",
     "EntityGrade": "C",
@@ -64,6 +72,7 @@
   },
   {
     "EntityID": "0130-045",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Natchez Freshman Academy",
     "EntityType": "School",
     "EntityGrade": "C",
@@ -71,6 +80,7 @@
   },
   {
     "EntityID": "0130-056",
+    "ParentEntityID": "0130-000",
     "EntityDisplayName": "Susie B West Elementary School",
     "EntityType": "School",
     "EntityGrade": "D",

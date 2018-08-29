@@ -28,9 +28,23 @@
           <v-flex xs10 offset-xs1 mt-5 pb-0>
             <v-card color="grey lighten-5 elevation-15">
               <v-card-text>
-                <v-autocomplete :loading="loading" v-on:change="navigate" :items="leas" item-text="EntityDisplayName" item-value="EntityID" :search-input.sync="search"
-                  v-model="select" cache-items class="mx-3" hide-no-data hide-details label="Search for school or district..."
-                  flat large autofocus light>
+                <v-autocomplete
+                  v-model="select"
+                  :loading="loading"
+                  v-on:change="navigate"
+                  :items="leas"
+                  item-text="EntityDisplayName"
+                  item-value="EntityID"
+                  :search-input.sync="search"
+                  class="mx-3"
+                  hide-no-data
+                  hide-details
+                  label="Search for school or district..."
+                  flat
+                  large
+                  autofocus
+                  light
+                  >
                   <template slot="item" slot-scope="{ item, tile }">
                     <v-list-tile-avatar v-if="item.EntityGrade == 'F'" color="red darken-4" class="headline font-weight-bold white--text">{{ item.EntityGrade }}</v-list-tile-avatar>
                     <v-list-tile-avatar v-else-if="item.EntityGrade == 'D'" color="orange lighten-1" class="headline font-weight-bold black--text">{{ item.EntityGrade }}</v-list-tile-avatar>
