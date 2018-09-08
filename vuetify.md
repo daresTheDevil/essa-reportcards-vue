@@ -44,3 +44,35 @@
 <span style="color: #795548; font-weight: 800">brown: #795548</span>
 <span style="color: #607D8B; font-weight: 800">blue-grey: #607D8B</span>
 <span style="color: #9E9E9E; font-weight: 800">grey: #9E9E9E</span>
+
+# Charts
+
+```js
+data () {
+      return {
+        chartOptions: {
+          chart: {
+            id: 'gaugeChart'
+          },
+          plotOptions: {
+            radialBar: {
+              startAngle: -90,
+              endAngle: 90,
+              dataLabels: {
+                name: {
+                  show: false
+                },
+                value: {
+                  offsetY: -3,
+                  fontSize: '2rem'
+                }
+              }
+            }
+          }
+        },
+        pattern: ['horizontalLines', 'slantedLines', 'squares'],
+        series: [76, 67, 61],
+
+        <apexcharts type="radialBar" :options="chartOptions" :series="series"></apexcharts>
+```
+

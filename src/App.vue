@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <v-app>
     <v-content>
@@ -30,41 +31,42 @@
 </template>
 
 <script>
-  export default {
-    name: 'App',
-    data: () => ({
-      icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-youtube',
-        'fab fa-github'
-      ],
-      links: [{
-        title: 'Home',
-        path: '/',
-        icon: 'home'
+export default {
+  name: "App",
+  data: () => ({
+    icons: [
+      "fab fa-facebook",
+      "fab fa-twitter",
+      "fab fa-youtube",
+      "fab fa-github"
+    ],
+    links: [
+      {
+        title: "Home",
+        path: "/",
+        icon: "home"
       },
       {
-        title: 'District',
-        path: '/district',
-        icon: 'face'
+        title: "District",
+        path: "/district",
+        icon: "face"
       },
       {
-        title: 'School',
-        path: '/school',
-        icon: 'lock_open'
+        title: "School",
+        path: "/school",
+        icon: "lock_open"
       },
       {
-        title: 'Secondary',
-        path: '/secondary',
-        icon: 'house'
+        title: "Secondary",
+        path: "/secondary",
+        icon: "house"
       },
       {
-        title: 'Card',
-        path: '/maincard',
-        icon: 'data'
+        title: "Card",
+        path: "/maincard",
+        icon: "data"
       }
-      ]
-    })
-  }
+    ]
+  })
+};
 </script>

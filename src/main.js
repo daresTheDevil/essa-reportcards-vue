@@ -4,16 +4,19 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
-import VueChartkick from 'vue-chartkick'
-import Highcharts from 'highcharts'
 import 'vuetify/dist/vuetify.min.css'
-import '@fortawesome/fontawesome-free/css/all.css' // Ensure you are using css-loader
+import VueChartkick from 'vue-chartkick'
+import VueApexCharts from 'vue-apexcharts'
+import Chart from 'chart.js'
+import '@fortawesome/fontawesome-free/css/all.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import './stylus/main.styl'
 
-Vue.use(VueChartkick, {adapter: Highcharts})
+Vue.use(VueChartkick, {adapter: Chart})
+Vue.use(VueApexCharts)
 
 Vue.use(Vuetify, {
-  iconfont: 'fa',
+  iconfont: 'md', // 'md' || 'mdi' || 'fa' || 'fa4'
   theme: {
     primary: '#001f3f',
     secondary: '#39cccc',
